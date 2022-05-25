@@ -7,7 +7,7 @@ import androidx.compose.runtime.snapshots.SnapshotStateList
 import androidx.lifecycle.*
 import com.amirreza.chatapp.feature_chat.presentation.chatroom.components.ChatScreenEvents
 import com.feature_chat.acknowledge.Acknowledge
-import com.feature_chat.data.remote.MessageService
+import com.amirreza.chatapp.feature_chat.data.remote.MessageService
 import com.amirreza.chatapp.feature_chat.data.websocket.WebSocketService
 import com.feature_chat.domain.entity.Message
 import kotlinx.coroutines.flow.MutableSharedFlow

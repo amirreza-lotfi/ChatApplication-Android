@@ -13,12 +13,7 @@ import com.amirreza.chatapp.feature_chat.presentation.chatroom.ChatroomScreen
 import com.amirreza.chatapp.ui.theme.ChatAppTheme
 import com.amirreza.chatapp.feature_chat.presentation.chatroom.ChatViewModel
 import com.amirreza.chatroom_application.feature_chat.presentation.login.LoginScreen
-import com.feature_chat.data.remote.MessageService
-import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.getViewModel
-import org.koin.androidx.viewmodel.ext.android.viewModel
-import org.koin.java.KoinJavaComponent
-import org.koin.java.KoinJavaComponent.inject
 
 @ExperimentalComposeUiApi
 class MainActivity : ComponentActivity() {

@@ -1,4 +1,4 @@
-package com.feature_chat.data.remote
+package com.amirreza.chatapp.feature_chat.data.remote
 
 import com.feature_chat.domain.entity.Message
 import kotlinx.serialization.Serializable

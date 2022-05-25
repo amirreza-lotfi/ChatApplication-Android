@@ -1,7 +1,5 @@
 package com.amirreza.chatapp.feature_chat.data.remote
 
-import com.feature_chat.data.remote.MessageJson
-import com.feature_chat.data.remote.MessageService
 import com.feature_chat.domain.entity.Message
 import io.ktor.client.*
 import io.ktor.client.request.*

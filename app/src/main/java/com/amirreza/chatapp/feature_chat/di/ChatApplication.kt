@@ -2,7 +2,7 @@ package com.amirreza.chatapp
 
 import android.app.Application
 import com.amirreza.chatapp.feature_chat.presentation.chatroom.ChatViewModel
-import com.feature_chat.data.remote.MessageService
+import com.amirreza.chatapp.feature_chat.data.remote.MessageService
 import com.amirreza.chatapp.feature_chat.data.remote.MessageServiceImp
 import com.amirreza.chatapp.feature_chat.data.websocket.WebSocketService
 import com.feature_chat.data.websocket.WebSocketServiceImpl

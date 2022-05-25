@@ -1,4 +1,4 @@
-package com.feature_chat.data.remote
+package com.amirreza.chatapp.feature_chat.data.remote
 
 import com.feature_chat.domain.entity.Message
 
@@ -7,11 +7,11 @@ interface MessageService {
 
 
     sealed class Endpoint(val url:String){
-        object GetAllMessages:Endpoint("$BASE_URL/messages/")
+        object GetAllMessages: Endpoint("$BASE_URL/messages")
     }
 
     companion object{
         //todo -> write your server base url here
-        const val BASE_URL = ""
+        const val BASE_URL = "http://192.168.204.120:8080"
     }
 }
