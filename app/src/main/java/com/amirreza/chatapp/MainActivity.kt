@@ -12,7 +12,7 @@ import androidx.navigation.navArgument
 import com.amirreza.chatapp.feature_chat.presentation.chatroom.ChatroomScreen
 import com.amirreza.chatapp.ui.theme.ChatAppTheme
 import com.amirreza.chatapp.feature_chat.presentation.chatroom.ChatViewModel
-import com.amirreza.chatroom_application.feature_chat.presentation.login.LoginScreen
+import com.amirreza.chatapp.feature_chat.presentation.login.LoginScreen
 import org.koin.androidx.viewmodel.ext.android.getViewModel
 
 @ExperimentalComposeUiApi

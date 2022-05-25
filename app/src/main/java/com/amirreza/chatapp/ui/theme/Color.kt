@@ -2,7 +2,7 @@ package com.amirreza.chatapp.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-val Purple200 = Color(0xFFBB86FC)
-val Purple500 = Color(0xFF6200EE)
-val Purple700 = Color(0xFF3700B3)
-val Teal200 = Color(0xFF03DAC5)
+val Blue = Color(0xFF0A0171)
+val Special = Color(0xFF2BC990)
+val Green = Color(0xFFAED383)
+val White = Color(0xFFf5f5f5)

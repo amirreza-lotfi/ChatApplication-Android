@@ -18,6 +18,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.constraintlayout.compose.ConstraintLayout
+import com.amirreza.chatapp.ui.theme.Blue
+import com.amirreza.chatapp.ui.theme.Green
+import com.amirreza.chatapp.ui.theme.White
 import com.feature_chat.domain.entity.Message
 import java.time.LocalDateTime
 import java.util.*
@@ -28,7 +31,7 @@ import java.util.*
 
 
 val text = "hi every body. welcome to this chat application that you can easily comminucate with " +
-        "your family and friends. enjoy your time. good luck !!"
+        "your family and friends. enjoy your dateCreated. good luck !!"
 
 @Composable
 fun ChatItem(username:String, message: Message){
@@ -54,8 +57,6 @@ fun ChatItem(username:String, message: Message){
 }
 
 
-
-
 @Composable
 fun UserChatItem(textOfAvatar:String, message: Message) {
     val widthOfScreen = LocalConfiguration.current.screenWidthDp.dp
@@ -68,14 +69,15 @@ fun UserChatItem(textOfAvatar:String, message: Message) {
             Modifier
                 .size(48.dp)
                 .clip(CircleShape)
-                .background(Color.Yellow)
+                .background(Blue)
                 .constrainAs(avatarRef) {
                     end.linkTo(parent.end)
                     bottom.linkTo(messageRef.bottom)
                 },
         ){
             Text(
-                text = textOfAvatar.uppercase(Locale.getDefault()),Modifier.align(Alignment.Center)
+                text = textOfAvatar.uppercase(Locale.getDefault()),Modifier.align(Alignment.Center),
+                color = White
             )
         }
 
@@ -102,7 +104,7 @@ fun UserChatItem(textOfAvatar:String, message: Message) {
                     .align(Alignment.CenterStart)
                     .width(widthOfScreen / 2)
                     .clip(RoundedCornerShape(16.dp))
-                    .background(Color(0xFFAED383))
+                    .background(Blue)
                     .padding(horizontal = 16.dp, vertical = 8.dp)
 
             ) {
@@ -110,7 +112,9 @@ fun UserChatItem(textOfAvatar:String, message: Message) {
                     Text(
                         text = message.username,
                         Modifier.align(Alignment.CenterStart),
-                        fontWeight = FontWeight.Bold
+                        fontWeight = FontWeight.Bold,
+                        color = White,
+                        fontSize = 16.sp
                     )
                 }
                 Spacer(modifier = Modifier.height(8.dp))
@@ -118,7 +122,8 @@ fun UserChatItem(textOfAvatar:String, message: Message) {
                     Text(
                         text = message.text,
                         Modifier.align(Alignment.CenterStart),
-                        fontSize = 12.sp
+                        fontSize = 13.sp,
+                        color = White
                     )
                 }
             }
@@ -138,7 +143,7 @@ fun OtherPeopleChatItem(textOfAvatar:String, message: Message) {
             Modifier
                 .size(48.dp)
                 .clip(CircleShape)
-                .background(Color.Yellow)
+                .background(Green)
                 .constrainAs(avatarRef) {
                     start.linkTo(parent.start)
                     end.linkTo(spacerRef.start)
@@ -169,7 +174,7 @@ fun OtherPeopleChatItem(textOfAvatar:String, message: Message) {
                     .align(Alignment.CenterStart)
                     .width(widthOfScreen / 2)
                     .clip(RoundedCornerShape(16.dp))
-                    .background(Color(0xFFAED383))
+                    .background(Green)
                     .padding(horizontal = 16.dp, vertical = 8.dp)
 
             ) {
@@ -177,7 +182,8 @@ fun OtherPeopleChatItem(textOfAvatar:String, message: Message) {
                     Text(
                         text = message.username,
                         Modifier.align(Alignment.CenterStart),
-                        fontWeight = FontWeight.Bold
+                        fontWeight = FontWeight.Bold,
+                        fontSize = 16.sp
                     )
                 }
                 Spacer(modifier = Modifier.height(8.dp))
@@ -185,7 +191,7 @@ fun OtherPeopleChatItem(textOfAvatar:String, message: Message) {
                     Text(
                         text = message.text,
                         Modifier.align(Alignment.CenterStart),
-                        fontSize = 12.sp
+                        fontSize = 13.sp
                     )
                 }
             }

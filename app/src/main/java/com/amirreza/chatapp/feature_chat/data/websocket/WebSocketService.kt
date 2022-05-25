@@ -12,7 +12,7 @@ interface WebSocketService {
 
     companion object{
         //todo -> write your server address here
-        const val BASE_URL = "ws://192.168.0.142:8080/"
+        const val BASE_URL = ""
     }
     sealed class Endpoint(val url:String){
         object ChatSocket: Endpoint("$BASE_URL/chatroom-websockets")

@@ -12,6 +12,6 @@ interface MessageService {
 
     companion object{
         //todo -> write your server base url here
-        const val BASE_URL = "http://192.168.204.120:8080"
+        const val BASE_URL = ""
     }
 }

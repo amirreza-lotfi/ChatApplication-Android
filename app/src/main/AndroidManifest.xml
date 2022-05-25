@@ -7,7 +7,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name=".ChatApp"
+        android:name=".feature_chat.di.ChatApp"
         android:allowBackup="true"
         android:usesCleartextTraffic="true"
         android:icon="@mipmap/ic_launcher"
@@ -20,6 +20,7 @@
             android:name="com.amirreza.chatapp.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize"
             android:theme="@style/Theme.ChatApp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,4 +1,4 @@
-package com.amirreza.chatapp
+package com.amirreza.chatapp.feature_chat.di
 
 import android.app.Application
 import com.amirreza.chatapp.feature_chat.presentation.chatroom.ChatViewModel

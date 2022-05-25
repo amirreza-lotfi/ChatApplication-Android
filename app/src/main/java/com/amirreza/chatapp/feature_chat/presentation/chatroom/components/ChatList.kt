@@ -17,33 +17,14 @@ fun ChatList(
     chats:List<Message>,
     username:String
 ) {
-    LazyColumn(
-        modifier = listModifier,
-        reverseLayout = true
-    ){
-        items(chats){ message ->
-            ChatItem(username, message)
+    Box(modifier = listModifier){
+        LazyColumn(
+            reverseLayout = true
+        ) {
+            items(chats) { message ->
+                ChatItem(username, message)
+            }
         }
     }
 }
 
-@RequiresApi(Build.VERSION_CODES.O)
-@Preview(showBackground = true)
-@Composable
-fun Test() {
-
-    val text = "hi every body. welcome to this chat application that you can easily comminucate with " +
-            "your family and friends. enjoy your time. good luck !!"
-
-    Box(Modifier.fillMaxSize()){
-        val list = listOf(
-            Message("text", "amirreza", LocalDateTime.now().toString()),
-            Message(text, "ali", LocalDateTime.now().toString()),
-            Message(text, "ahmad", LocalDateTime.now().toString()),
-            Message(text, "amirreza", LocalDateTime.now().toString()),
-            Message(text, "reza", LocalDateTime.now().toString()),
-            Message(text, "jamshid", LocalDateTime.now().toString()),
-        )
-        ChatList(listModifier = Modifier.fillMaxSize(), chats = list, username = "amirreza")
-    }
-}
