@@ -12,5 +12,5 @@ With this application, you can create a simple private group chat with your frie
  
  # Getting Start
   
-To run this application, you need to create server. I have developed server by Ktor framework and I have <a href = "https://github.com/amirreza-lotfi/ChatApplication-Ktor">shared<a/> it in my GitHub.<br\> You can run it in your host or your localhost.
+To run this application, you need to create server. I have developed server by Ktor framework and I have <a href = "https://github.com/amirreza-lotfi/ChatApplication-Ktor">shared<a/> it in my GitHub.<br/> You can run it in your host or your localhost.
 Also, you need to specify baseUrl in android application (follow TODO`s)
