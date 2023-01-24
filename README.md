@@ -1,4 +1,4 @@
-# GraphAlgorithm
+# Chat Application
 
 This Application was implemented by Jetpack Compose framework. The Koin library was used for dependency injection, Ktor-android library for https requests and connectiong
 to websocket and ShareFlow for applying reactive programming.</br>
